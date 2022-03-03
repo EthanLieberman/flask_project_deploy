@@ -1,0 +1,83 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto Serif', sans-serif;
+    font-weight: 100;
+}
+
+.background{
+    background-color: rgb(50, 44, 71);
+}
+
+h1, h2, h4, table, table a, p a, .white{
+    color: white;
+}
+
+.table-p{
+    padding-right: 175px;
+}
+
+input, textarea, option, select{
+    background: rgb(80, 68, 121);
+    color: white;
+}
+
+.flex1{
+    flex: 1;
+}
+.flex2{
+    flex: 2;
+}
+
+.about{
+width: 500px;
+color: white;
+background-color: rgb(80, 68, 121);
+height: 400px;
+margin: auto;
+margin-top: 100px;
+box-shadow: 3px 3px 3px rgb(38, 30, 65);
+border-radius: 2%;
+}
+
+
+
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+a:hover, h1:hover{
+    color: cyan;
+}
+
+
+.scale{
+    animation: scale .5s forwards;
+}
+
+.unscale{
+        animation: unscale .5s forwards;
+}
+
+@keyframes scale{
+    from{
+        color: white;
+        transform: scale(1,1);
+    }
+    to{
+        color: cyan;
+        transform: scale(1.1,1.1);
+    }
+}
+
+@keyframes unscale{
+    from{
+        color: cyan;
+        transform: scale(1.1,1.1);
+    }
+    to{
+        color: white;
+        transform: scale(1,1);
+    }
+}
